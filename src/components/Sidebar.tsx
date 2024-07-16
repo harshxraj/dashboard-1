@@ -46,10 +46,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-2 pb-5">
-        <div className="w-10 h-10 rounded-full bg-sky-400 flex justify-center items-center">TW</div>
-        Tom Wang
-      </div>
+      <div className="flex items-center gap-2 pb-5"></div>
     </div>
   );
 };
