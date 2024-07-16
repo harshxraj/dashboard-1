@@ -16,7 +16,7 @@ interface DataState {
 }
 
 const First = () => {
-  const [data, setData] = useState<Partial<DataState>>({});
+  const [data, setData] = useState<Partial<DataState>>({ purchases: 4294, revenue: 322000, refunds: 8200 });
 
   useEffect(() => {
     fetch(url, {
