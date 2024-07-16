@@ -15,7 +15,7 @@ interface ValueInterface {
 }
 
 const Fifth = () => {
-  const [data, setData] = useState<ValueInterface | null>(null);
+  const [data] = useState<ValueInterface | null>({ negative: 67, neutral: 10, positive: 13 });
 
   useEffect(() => {
     fetch(url, {
@@ -25,7 +25,7 @@ const Fifth = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setData(data);
+        // setData(data);
       })
       .catch((error) => console.error("Error:", error));
   }, []);
