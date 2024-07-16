@@ -16,7 +16,7 @@ interface DataState {
 }
 
 const First = () => {
-  const [data] = useState<Partial<DataState>>({ purchases: 4294, revenue: 322000, refunds: 8200 });
+  const [data, setData] = useState<Partial<DataState>>({});
 
   useEffect(() => {
     fetch(url, {
@@ -25,7 +25,7 @@ const First = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        // setData(data);
+        setData(data);
         console.log(data);
       })
       .catch((error) => console.error("Error:", error));
