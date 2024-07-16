@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Field, Input, Label, Button } from "@headlessui/react";
 import clsx from "clsx";
 import { useNavigate } from "react-router-dom";
@@ -43,6 +43,12 @@ const Login = () => {
       console.error("Error logging in:", error);
     }
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/dashboard");
+    }, 1000);
+  }, []);
   return (
     <div className="w-full px-4 border flex flex-col items-center h-screen justify-center">
       <Toaster />
