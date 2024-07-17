@@ -26,7 +26,7 @@ function formatNumber(number: number) {
 
 const Pricecard = (props: Props) => {
   return (
-    <div className="border px-4 py-4 rounded-2xl">
+    <div className="border px-4 py-4 rounded-2xl max-w-[290px]">
       <div>{props.title}</div>
       <div className="flex items-center gap-3">
         <div className="font-semibold text-2xl text-slate-700">{formatNumber(props.value)}</div>

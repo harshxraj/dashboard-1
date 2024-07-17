@@ -46,7 +46,7 @@ const First = () => {
           </div>
         </div>
       </div> */}
-      <div className="grid grid-cols-3 gap-3 mb-2">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3 mb-2">
         {Object.keys(data).map((key) => (
           <Pricecard key={key} title={key} value={data[key as keyof DataState]} />
         ))}

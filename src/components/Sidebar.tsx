@@ -17,7 +17,7 @@ const items = [
 
 const Sidebar = () => {
   return (
-    <div className="hidden  bg-gray-200 h-screen lg:flex flex-col items-center justify-between">
+    <div className="hidden  bg-gray-200 h-screen md:flex flex-col items-center justify-between">
       <div className="flex items-center text-2xl text-slate-800 gap-3 mt-10 -ml-1 font-medium ">
         <FaFan />
         Salesway
@@ -40,7 +40,7 @@ const Sidebar = () => {
           {items.map((item, index) => (
             <div key={index} className="flex items-center gap-4 mt-4 text-xl">
               {item.icon}
-              <span>{item.text}</span>
+              <span className="text-sm lg:text-xl">{item.text}</span>
             </div>
           ))}
         </div>

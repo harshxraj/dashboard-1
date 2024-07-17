@@ -9,11 +9,11 @@ import Fifth from "../components/Fifth";
 const Homepage = () => {
   return (
     <div className="flex bg-gray-200 w-full">
-      <div className="w-[300px]">
+      <div className="md:w-[300px]">
         <Sidebar />
       </div>
 
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col lg:flex-row">
         <div className="">
           <First />
           <Second />
