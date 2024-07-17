@@ -15,7 +15,11 @@ interface ValueInterface {
 }
 
 const Fifth = () => {
-  const [data, setData] = useState<ValueInterface | null>();
+  const [data, setData] = useState<ValueInterface | null>({
+    negative: 67,
+    positive: 13,
+    neutral: 10,
+  });
 
   useEffect(() => {
     fetch(url, {
