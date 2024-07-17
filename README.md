@@ -6,6 +6,7 @@ This repository contains the implementation of the given assignment for a Front 
 
 - [Project Overview](#project-overview)
 - [Technologies Used](#technologies-used)
+- [Preview](#preview)
 - [Setup Instructions](#setup-instructions)
 - [Database Setup](#database-setup)
 - [API Integration](#api-integration)
@@ -24,6 +25,10 @@ The assignment includes building a front-end application that integrates with bo
 - **Recharts**: For creating charts and graphs
 - **Supabase**: For database management and real-time data fetching
 - **TypeScript**: For type safety and enhanced development experience
+
+## Preview
+![SS](https://github.com/user-attachments/assets/702d90da-cb71-4e0e-b3cc-6c0ed65bae35)
+
 
 ## Setup Instructions
 
