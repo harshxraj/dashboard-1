@@ -35,7 +35,7 @@ const Login = () => {
         throw new Error("Network response was not ok.");
       }
 
-      if (username === "trail" && password === "assignment123") {
+      if (username === "trial" && password === "assignment123") {
         toast.success("Login successful!");
         setTimeout(() => {
           navigate("/dashboard");
