@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { createClient } from "@supabase/supabase-js";
 
 // const data = [
@@ -48,7 +48,7 @@ const Second = () => {
         <div></div>
       </div>
 
-      <div className="">
+      <div className="hidden lg:block">
         <BarChart
           width={900}
           height={340}
@@ -68,6 +68,28 @@ const Second = () => {
           <Bar dataKey="Last_year" fill="#69e0f2" />
           <Bar dataKey="This_year" fill="#0a74ff" />
         </BarChart>
+      </div>
+
+      <div className="block lg:hidden">
+        <ResponsiveContainer width="100%" height={340}>
+          <BarChart
+            data={comparisonItems}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="1 1" />
+            <XAxis dataKey="Month" />
+            <YAxis />
+            <Tooltip shared={false} trigger="click" />
+            <Legend />
+            <Bar dataKey="Last_year" fill="#69e0f2" />
+            <Bar dataKey="This_year" fill="#0a74ff" />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );

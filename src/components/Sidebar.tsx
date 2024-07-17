@@ -17,7 +17,7 @@ const items = [
 
 const Sidebar = () => {
   return (
-    <div className="w- bg-gray-200 h-screen flex flex-col items-center justify-between">
+    <div className="hidden  bg-gray-200 h-screen lg:flex flex-col items-center justify-between">
       <div className="flex items-center text-2xl text-slate-800 gap-3 mt-10 -ml-1 font-medium ">
         <FaFan />
         Salesway

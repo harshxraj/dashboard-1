@@ -32,7 +32,7 @@ const First = () => {
   }, []);
 
   return (
-    <div className="px-4 pl-10 pt-3 bg-white pb-2 rounded-tl-xl rounded-tr-xl mt-2">
+    <div className="px-4 pl-10 pt-3 bg-white pb-2 rounded-tl-xl rounded-tr-xl mt-2 w-full">
       <div className="flex">
         <div className="text-3xl font-semibold my-3">Dashboard</div>
       </div>

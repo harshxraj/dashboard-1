@@ -8,20 +8,23 @@ import Fifth from "../components/Fifth";
 
 const Homepage = () => {
   return (
-    <div className="flex bg-gray-200">
-      <div className="w-1/3">
+    <div className="flex bg-gray-200 w-full">
+      <div className="w-[300px]">
         <Sidebar />
       </div>
-      <div className="w-2/3">
-        <First />
-        <Second />
-        <Sixth />
-      </div>
 
-      <div className="mx-2 w-1/3">
-        <Third />
-        <Fourth />
-        <Fifth />
+      <div className="flex flex-col md:flex-row">
+        <div className="">
+          <First />
+          <Second />
+          <Sixth />
+        </div>
+
+        <div className="mx-2">
+          <Third />
+          <Fourth />
+          <Fifth />
+        </div>
       </div>
     </div>
   );
