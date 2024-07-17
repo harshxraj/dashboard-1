@@ -13,36 +13,32 @@ const Login = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
 
-    // const apiUrl = "http://ec2-3-83-254-115.compute-1.amazonaws.com:8020/api/v1/login/";
-    // const requestBody = {
-    //   username: "trial",
-    //   password: "assignment123",
-    //   email: "string",
-    //   phone_number: "string",
-    //   input_code: 0,
-    // };
+    const apiUrl = "http://ec2-3-83-254-115.compute-1.amazonaws.com:8020/api/v1/login/";
+    const requestBody = {
+      username: "trial",
+      password: "assignment123",
+      email: "string",
+      phone_number: "string",
+      input_code: 0,
+    };
 
     try {
-      // const response = await fetch(apiUrl, {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(requestBody),
-      // });
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
 
-      // if (!response.ok) {
-      //   throw new Error("Network response was not ok.");
-      // }
-
-      if (username === "trial" && password === "assignment123") {
-        toast.success("Login successful!");
-        setTimeout(() => {
-          navigate("/dashboard");
-        }, 1000);
-      } else {
-        toast.error("Wrong credentials");
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
       }
+
+      toast.success("Login successful!");
+      setTimeout(() => {
+        navigate("/dashboard");
+      }, 1000);
     } catch (error) {
       console.error("Error logging in:", error);
     }
