@@ -23,6 +23,7 @@ The assignment includes building a front-end application that integrates with bo
 - **Tailwind CSS**: For styling the application
 - **Recharts**: For creating charts and graphs
 - **Supabase**: For database management and real-time data fetching
+- **TypeScript**: For type safety and enhanced development experience
 
 ## Setup Instructions
 
