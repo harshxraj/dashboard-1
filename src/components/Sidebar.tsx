@@ -17,13 +17,13 @@ const items = [
 
 const Sidebar = () => {
   return (
-    <div className="hidden  bg-gray-200 h-screen md:flex flex-col items-center justify-between">
+    <div className="hidden  bg-gray-100 h-screen md:flex flex-col items-center justify-between">
       <div className="flex items-center text-2xl text-slate-800 gap-3 mt-10 -ml-1 font-medium ">
         <FaFan />
         Salesway
       </div>
 
-      <div className="-mt-[200px] text-xl text-slate-500 flex flex-col gap-4 ">
+      <div className="-mt-[200px] text-xl text-slate-600 flex flex-col gap-4 ">
         <div className="flex items-center gap-4 ">
           <CiSettings />
           Settings

@@ -8,7 +8,7 @@ import Fifth from "../components/Fifth";
 
 const Homepage = () => {
   return (
-    <div className="flex bg-gray-200 w-full">
+    <div className="flex bg-gray-100 w-full">
       <div className="md:w-[300px]">
         <Sidebar />
       </div>
