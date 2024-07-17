@@ -35,10 +35,14 @@ const Login = () => {
         throw new Error("Network response was not ok.");
       }
 
-      toast.success("Login successful!");
-      setTimeout(() => {
-        navigate("/dashboard");
-      }, 1000);
+      if (username === "trail" && password === "assignment123") {
+        toast.success("Login successful!");
+        setTimeout(() => {
+          navigate("/dashboard");
+        }, 1000);
+      } else {
+        toast.error("Wrong credentials");
+      }
     } catch (error) {
       console.error("Error logging in:", error);
     }
