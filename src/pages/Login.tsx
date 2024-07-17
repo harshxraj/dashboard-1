@@ -13,14 +13,14 @@ const Login = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
 
-    const apiUrl = "http://ec2-3-83-254-115.compute-1.amazonaws.com:8020/api/v1/login/";
-    const requestBody = {
-      username: "trial",
-      password: "assignment123",
-      email: "string",
-      phone_number: "string",
-      input_code: 0,
-    };
+    // const apiUrl = "http://ec2-3-83-254-115.compute-1.amazonaws.com:8020/api/v1/login/";
+    // const requestBody = {
+    //   username: "trial",
+    //   password: "assignment123",
+    //   email: "string",
+    //   phone_number: "string",
+    //   input_code: 0,
+    // };
 
     try {
       // const response = await fetch(apiUrl, {
