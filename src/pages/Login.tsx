@@ -23,17 +23,17 @@ const Login = () => {
     };
 
     try {
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestBody),
-      });
+      // const response = await fetch(apiUrl, {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(requestBody),
+      // });
 
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
+      // if (!response.ok) {
+      //   throw new Error("Network response was not ok.");
+      // }
 
       if (username === "trial" && password === "assignment123") {
         toast.success("Login successful!");
