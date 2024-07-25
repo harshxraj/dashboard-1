@@ -14,7 +14,7 @@ const data = [
 // const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
 // const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 type ComparisonItem = {
   id: number;
