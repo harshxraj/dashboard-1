@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 // import { createClient } from "@supabase/supabase-js";
 
@@ -24,7 +24,7 @@ type ComparisonItem = {
 };
 
 const Second = () => {
-  const [comparisonItems, setComparisonItems] = useState<ComparisonItem[]>(data);
+  const [comparisonItems] = useState<ComparisonItem[]>(data);
 
   // const fetchData = async () => {
   //   let { data: comparison_items, error: comparison_items_error } = await supabase
