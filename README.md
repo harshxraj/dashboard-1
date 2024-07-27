@@ -1,6 +1,6 @@
 # Front End Developer Assignment
 
-This repository contains the implementation of the given assignment for a Front End Developer role. The application is built using React, Tailwind CSS, Recharts, and Supabase.
+Daahboard built using React, Tailwind CSS, Recharts, and Supabase.
 
 ## Table of Contents
 
