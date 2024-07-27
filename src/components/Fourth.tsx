@@ -3270,7 +3270,7 @@ const Fourth = () => {
 
   // useEffect(() => {
   //   fetchData();
-  }, []);
+  // }, []);
 
   return (
     <div className="bg-white my-2 rounded-2xl pb-3 pr-3">
