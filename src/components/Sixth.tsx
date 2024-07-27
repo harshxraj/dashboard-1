@@ -1,40 +1,40 @@
-import { useEffect, useState } from "react";
-import { createClient } from "@supabase/supabase-js";
+import { useState } from "react";
+// import { createClient } from "@supabase/supabase-js";
 
-// const data = [
-//   {
-//     id: 1,
-//     Product: "Camera Mi 360",
-//     sold_amount: 432,
-//     unit_price: 120,
-//     revenue: 51320,
-//     rating: 4.81,
-//   },
-//   {
-//     id: 2,
-//     Product: "Message Gun",
-//     sold_amount: 120,
-//     unit_price: 60,
-//     revenue: 23901,
-//     rating: 3.44,
-//   },
-//   {
-//     id: 3,
-//     Product: "Redmi Note 9",
-//     sold_amount: 190,
-//     unit_price: 87.6,
-//     revenue: 87211,
-//     rating: 2.5,
-//   },
-//   {
-//     id: 4,
-//     Product: "One Plus Nord CE Lite 2",
-//     sold_amount: 140,
-//     unit_price: 24.1,
-//     revenue: 29809,
-//     rating: 4.65,
-//   },
-// ];
+const data = [
+  {
+    id: 1,
+    Product: "Camera Mi 360",
+    sold_amount: 432,
+    unit_price: 120,
+    revenue: 51320,
+    rating: 4.81,
+  },
+  {
+    id: 2,
+    Product: "Message Gun",
+    sold_amount: 120,
+    unit_price: 60,
+    revenue: 23901,
+    rating: 3.44,
+  },
+  {
+    id: 3,
+    Product: "Redmi Note 9",
+    sold_amount: 190,
+    unit_price: 87.6,
+    revenue: 87211,
+    rating: 2.5,
+  },
+  {
+    id: 4,
+    Product: "One Plus Nord CE Lite 2",
+    sold_amount: 140,
+    unit_price: 24.1,
+    revenue: 29809,
+    rating: 4.65,
+  },
+];
 
 type TopProduct = {
   id: number;
@@ -45,25 +45,25 @@ type TopProduct = {
   rating: number;
 };
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
+// const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
+// const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const Sixth = () => {
-  const [topProducts, setTopProducts] = useState<TopProduct[]>([]);
-  const fetchData = async () => {
-    let { data: top_products, error: top_products_err } = await supabase.from("topProducts").select("*");
-    console.log("DATA", top_products);
-    if (top_products_err) console.error("Error fetching data:");
-    else {
-      setTopProducts(top_products || []);
-    }
-  };
+  const [topProducts] = useState<TopProduct[]>(data);
+  // const fetchData = async () => {
+  //   let { data: top_products, error: top_products_err } = await supabase.from("topProducts").select("*");
+  //   console.log("DATA", top_products);
+  //   if (top_products_err) console.error("Error fetching data:");
+  //   else {
+  //     setTopProducts(top_products || []);
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     // <div>
