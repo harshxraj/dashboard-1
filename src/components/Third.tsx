@@ -72,7 +72,7 @@ const Third = () => {
         }
         return prev + 1;
       });
-    }, 15);
+    }, 30);
 
     return () => {
       clearInterval(id);
